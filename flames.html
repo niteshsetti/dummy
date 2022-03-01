@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flames-predictor</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="flames.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <!------ Include the above in your HEAD tag ---------->
+</head>
+
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="flames.png" id="icon" alt="User Icon" />
+                <h1>Flames Predictor</h1>
+            </div>
+
+            <!-- Login Form -->
+            <form autocomplete="off">
+            <input type="text" id="boy" class="fadeIn second" name="login" placeholder="Enter Boy Name">
+            <input type="text" id="girl" class="fadeIn third" name="login" placeholder="Enter Girl Name">
+            </form>
+            <input type="submit" class="fadeIn fourth" value="Predict" id="predict">
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a class="underlineHover">Developed by Human</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

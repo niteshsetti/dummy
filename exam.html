@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><b>LOGIN</b></title>
+    </head>
+    <style>
+        input[type="email"],input[type="password"]{
+            border-top:none;
+            border-left:none;
+            border-right:none;
+        }
+    </style>
+    <body>
+        <center>
+        <b>LOGIN</b></br></br>
+        <input type="email" placeholder="Enter Your Email" id="email"></br></br>
+        <input type="password" placeholder="Enter Your Password" id="password"></br></br>
+        <input type="submit" value="Login" onclick="validate()">
+        </center>
+        <script>
+            const validate=()=>{
+                var email=document.getElementById("email").value;
+                var password=document.getElementById("password").value;
+                if(email=="" && password==""){
+                    alert("Email & password is compulsory");
+                }
+                if(email=="" && password!=""){
+                    alert("Email is Required");
+                }
+                if(password=="" && email!=""){
+                    alert("Password is Required");
+                }
+                if(email!="" && password!=""){
+                    alert("Login successfull");
+                }
+            }
+        </script>
+    </body>
+</html>
